@@ -8,12 +8,12 @@
     let deviceName;
 
 	onMount(() => {
-		typeof AirServerAppStart === "function" &&  AirServerAppStart();
+		typeof AirServerAppStart === "function" && AirServerAppStart();
     deviceName = typeof getDeviceUserFriendlyName === "function" ? getDeviceUserFriendlyName() : '[TV NAME]';
 	});
 
 	onDestroy(() => {
-		(typeof AirServerAppStop === "function") && window.addEventListener("beforeunload", AirServerAppStop);
+		(typeof AirServerAppStop === "function") && AirServerAppStop();
 	});
 
 </script>
