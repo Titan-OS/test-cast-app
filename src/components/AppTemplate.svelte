@@ -164,4 +164,9 @@ p {
   height: 31px;
   flex-shrink: 0;
 }
+
+.title-section > h1{
+  width: 780px;
+}
+
 </style>
