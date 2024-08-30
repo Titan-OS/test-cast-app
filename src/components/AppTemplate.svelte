@@ -24,8 +24,7 @@
         <div class="description">
             <img src={appLogo} alt={appName} class="app-logo" />
             <div class="title-section">
-                <h1>{appName}</h1>
-                <p class="availability">This app will be available soon</p>
+                <h1>{appName} will be available soon</h1>
                 <p>We are working on bringing it to your TV as soon as possible. Meanwhile, use AirServer to cast from your mobile device.</p>
             </div>
         </div>
