@@ -11,17 +11,25 @@
     onMount(() => {
         typeof AirServerAppStart === "function" && AirServerAppStart();
         deviceName = typeof getDeviceUserFriendlyName === "function" ? getDeviceUserFriendlyName() : '[TV NAME]';
+
+        window.addEventListener('beforeunload', handleBeforeDestroy);
+        window.addEventListener('keydown', handleKeyDown);
     });
 
     onDestroy(() => {
         window.removeEventListener('beforeunload', handleBeforeDestroy);
+        window.removeEventListener('keydown', handleKeyDown);
     });
 
     const handleBeforeDestroy = () => {
         typeof AirServerAppStop === "function" && AirServerAppStop();
     };
 
-    window.addEventListener('beforeunload', handleBeforeDestroy);
+    const handleKeyDown = (event) => {
+        if (event.key === 'Backspace') {
+            typeof AirServerAppStop === "function" && AirServerAppStop();
+        }
+    };
 
 </script>
 
