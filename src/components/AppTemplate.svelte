@@ -22,11 +22,14 @@
     });
 
     const handleBeforeDestroy = () => {
+        console.log('stop casting');
         typeof AirServerAppStop === "function" && AirServerAppStop();
     };
 
     const handleKeyDown = (event) => {
+        console.log(event.key);
         if (event.key === 'Backspace') {
+            console.log('stop casting');
             typeof AirServerAppStop === "function" && AirServerAppStop();
         }
     };
