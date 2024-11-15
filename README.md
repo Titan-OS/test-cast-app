@@ -1,30 +1,13 @@
-# svelte app
+# Casting App
 
-## Get started
+A simple web application designed to enable casting of popular app-s to TitanOS
 
-Install the dependencies...
+## Description
 
-```bash
-npm install
-```
+This app serves as a workaround for users who want to cast content from apps 
 
-...then start [Rollup](https://rollupjs.org):
+## Deployment
 
-```bash
-npm run dev
-```
-
-Navigate to [localhost:8080](http://localhost:8080). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
-
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
-
-If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
-
-## Building and running in production mode
-
-To create an optimised version of the app:
-
-```bash
-npm run build
-```
-
+The live version of the app is available here: 
+Spotify [Cast App on Vercel](https://cast-app-mauve.vercel.app/spotify)
+HBO [Cast App on Vercel](https://cast-app-mauve.vercel.app/hbo)
